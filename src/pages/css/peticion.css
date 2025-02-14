@@ -1,0 +1,135 @@
+.triangulo{
+    margin-top: -7%;
+    width: 0px;
+    height: 0px;
+    border-left: 600px solid transparent;
+    border-right: 600px solid transparent;
+    border-top: 150px solid rgb(148, 75, 145);
+}
+
+.wrapper{
+    margin-top: 70px;
+    min-width: 125vh;
+    height: 400px !important;
+    min-height: 20vh; 
+    background-color: rgb(241, 205, 240);
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+i{
+    font-size: 1em;
+    color: palevioletred;
+    border: 5px solid transparent;
+    outline: 3px solid pink;
+    border-radius: 50%;
+
+}
+
+h2{
+    font-size: 2em;
+    color: rgb(26, 27, 27);
+    margin: 15px 0; 
+}
+
+.btn-grup{
+    display: flex;
+    justify-content: center;
+    margin-right: 50px !important;
+    
+}
+
+.btnEntrar{
+    margin-right: 5%;
+    position: absolute; 
+    cursor: pointer;
+    width: 110px;
+    height: 30px;
+    background: rgb(190, 90, 137);
+    text-align: center;
+    color: aliceblue;
+    border-bottom: 1px;
+    border: 2px solid pink;
+}
+
+.btnPosponer{
+    margin-left: 15%;
+    position: absolute; 
+    cursor: pointer;
+    width: 110px;
+    height: 30px;
+    background: rgb(190, 90, 137);
+    text-align: center;
+    color: aliceblue;
+    border-bottom: 1px;
+    border: 2px solid pink;
+}
+
+
+.heart {
+    position: absolute;
+    margin-left: 1%;
+    margin-top: -5%;
+
+    height: 125px;
+    width: 125px;
+    background-color: #e9a3b7;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #e9a3b7;
+    animation: heart 0.6s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(17, 16, 16);  
+    font-size: 12px; 
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .heart p {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    transform: rotate(45deg) translate(0,-50px);
+  }
+  
+  @keyframes  heart {
+    0% {
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80% {
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100% {
+        transform: rotate(-45deg) scale(0.8);
+    }
+  }
+  
+  .heart::before {
+    content: "";
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    background-color: #e9a3b7;
+    top: -50%;
+    border-radius: 125px;
+    box-shadow: -10px -10px 90px #e9a3b7;
+  }
+  
+  .heart::after {
+    content: "";
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    background-color: #e9a3b7;
+    right: -50%;
+    border-radius: 150px;
+    box-shadow: 10px 10px 90px #e9a3b7;
+  }
+  
+  
